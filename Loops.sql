@@ -1,6 +1,7 @@
+create database marketers;
 use marketers;
 
-# alter the table o add another column
+-- alter the table to add another column
 alter table marketers_reward
 add column yearly_increment int;
 
