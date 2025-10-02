@@ -49,6 +49,7 @@ Each file demonstrates how these features work in MySQL with practical examples.
 - Example: A function that takes two numbers and returns their sum.
 - SQL has built-in ones (SUM, AVG) and you can also create your own.
 
+---
 ### 7. If / Else Statement
 - Works like a **decision maker**.  
 - If the condition is true → do this.  
