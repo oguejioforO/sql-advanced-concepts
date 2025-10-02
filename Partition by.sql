@@ -1,6 +1,4 @@
--- =========================================
--- 1. Partition by
--- =========================================
+
 create database cieos_partition;
 use cieos_partition;
 
@@ -15,7 +13,7 @@ course_fee int,
 course_mentor varchar(60),
 course_lauch_year int);
 
-select * from cieos_course ;
+
 
 insert into cieos_course values
 ('machine_learning' , 101 , 'ML', "this is ML course" ,'2019-07-07',3540,'james',2019) ,
@@ -35,7 +33,7 @@ insert into cieos_course values
 ('MERN' , 101 , 'ML', "this is ML course" ,'2019-07-07',3540,'james',2019);
 
 select * from cieos_course where course_lauch_year = 2020;
-select * from cieos_course;
+
 
 -- Below is how to create partition by, it is done along the table creation
 drop table cieos_courses;
