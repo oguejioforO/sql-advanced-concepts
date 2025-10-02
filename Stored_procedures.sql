@@ -1,6 +1,4 @@
--- =========================================
--- 1.stored procedures
--- =========================================
+
 create database company;
 use company;
 
@@ -64,39 +62,3 @@ insert into check_key(student_id,student_name,course_name,course_id)
 values(34,'anderson ted','web dev',20);
 
 select * from check_key;
-
-
-
-
--- =========================================
--- 2. user-defined stored function (UDF)
--- =========================================
-
-Delimiter $$
-create function addition()
-returns int
-Deterministic
-
-begin 
-    declare var1 int;
-    declare var2 int;
-	set var1 = 5;
-    set var2 = var1 * 6;
-	return var2;
-end $$
-
-select addition() as result;
-
-# Example 2
-Delimiter $$
-create function addition2(var1 int, var2 int)
-returns int
-Deterministic
-
-begin 
-    declare result int;
-    set result= var1 * var2;
-	return result;
-end $$
-
-select addition2(4,6) as result;
